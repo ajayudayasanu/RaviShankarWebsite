@@ -1,0 +1,966 @@
+/* ----------------------------------------------------
+Theme Name:Cortex - HTML Template
+Version:1.5
+Author:Kiswa Solutions
+------------------------------------------------------- */
+
+/* ======================================================
+ TABLE OF CONTENTS
+====================================================== */
+
+/* 
+
+1.0: Settings 
+1.1: Slider
+1.2: About
+1.3: Resume
+1.4: Skills
+1.5: Services
+1.6: Portfolio
+1.7: Banner
+1.8: Blogs
+1.19: Testimonials
+1.10: Contact
+1.11: Footer
+1.12: Blog-Posts
+1.13: Blog-Details
+1.14: Comment Form
+1.15: Team
+1.16: Pricing
+1.17: Sidenav
+
+*/
+
+/* ====================================================
+ 1.0: Settings 
+====================================================== */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Open+Sans:300,400,600,700,800&amp;display=swap');
+/* settings */
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, .heading {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+.heading h1 {
+    font-weight: 700;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+a.nav-link:focus, .btn:focus, a.btn:focus, button:focus, .form-control:focus, button.btn:focus, .navbar-toggler:focus {
+    outline: unset;
+    -webkit-box-shadow: unset;
+    box-shadow: unset;
+}
+
+.resume .nav-tabs .nav-link.active:focus {
+    outline: unset;
+}
+
+.resume .nav-tabs .nav-link:hover {
+    -webkit-box-shadow: unset;
+    box-shadow: unset;
+}
+
+/* Heading Style */
+
+.heading {
+    position: relative;
+    display: inline-block;
+    margin-top: -10px;
+}
+
+.heading-border {
+    border-bottom: 3px dashed;
+    padding-bottom: 10px;
+}
+
+.heading-absolute {
+    position: absolute;
+    right: -30px;
+    top: -40px;
+    font-weight: 700;
+    font-size: 80px;
+    z-index: -1;
+}
+
+.about-margin {
+    margin-bottom: 20px;
+}
+
+.heading-margin {
+    margin-bottom: 30px;
+}
+
+.para-margin {
+    margin-bottom: 50px;
+}
+
+/* Helper Classes */
+
+.flex-centering {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.flex-centeringv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.sh-above {
+    z-index: 1 !important;
+}
+
+.sh-above2 {
+    z-index: 2 !important;
+}
+
+/* Font Weights */
+
+.fw-light {
+    font-weight: 300;
+}
+
+.fw-regular {
+    font-weight: 400;
+}
+
+.fw-medium {
+    font-weight: 500;
+}
+
+.fw-semi-bold {
+    font-weight: 700;
+}
+
+.fw-bold {
+    font-weight: 900;
+}
+
+.br0 {
+    border-radius: 0;
+}
+
+.br-unset {
+    border: unset;
+}
+
+.lsp1 {
+    letter-spacing: 1px;
+}
+
+/* Universal Rules */
+
+.fw-semi-bold-all * {
+    font-weight: 600;
+}
+
+.br0-all * {
+    border-radius: 0;
+}
+
+.br-unset-all * {
+    border: unset;
+}
+
+/* Sections Padding */
+
+.section-padding {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+/* All Styles */
+
+img {
+    display: block;
+    margin: auto;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+p {
+    font-weight: 400;
+}
+
+button.btn, a.btn {
+    font-weight: 500;
+}
+
+/* Custom Border */
+
+.custom-border {
+    position: relative;
+    height: 1px;
+}
+
+.line-border {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-size: 20px 100%;
+}
+
+/* Font Sizes For Nabar*/
+
+.fs-navbar-brand {
+    font-size: 35px;
+}
+
+.fs-nav-link a.nav-link {
+    font-size: 20px;
+}
+
+/* Overlay Colors settings */
+
+.bg-overlay {
+    position: relative;
+}
+
+.bg-overlay:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.bg-overlay-dark {
+    position: relative;
+}
+
+.bg-overlay-dark:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* ====================================================
+ 1.1: Slider
+====================================================== */
+
+.meta {
+    text-transform: uppercase;
+    padding-top: 75px;
+}
+
+.meta.meta-blog {
+    margin-top: 50px;
+}
+
+.meta .first-page-text-headings h1:nth-child(1) {
+    letter-spacing: 15px;
+}
+
+.meta .first-page-text-headings h1:nth-child(2) {
+    margin: 10px 0 20px 0;
+}
+
+.meta .first-page-text-headings .dash {
+    line-height: 1;
+    font-size: 21px;
+    margin: 20px 0;
+}
+
+ul.social {
+    margin-top: 0px;
+}
+
+ul.social li {
+    margin: 20px 40px;
+}
+
+ul.social li a {
+    font-size: 30px;
+}
+
+footer ul.social {
+    margin-top: -5px;
+}
+
+footer ul.social li {
+    margin: 0px 40px;
+}
+
+/* ====================================================
+ 1.3: About
+====================================================== */
+
+.img-styled {
+    padding-bottom: 13px;
+    margin-left: 16px;
+}
+
+.img-styled .border-styled {
+    border: 4px dashed;
+    margin: auto;
+}
+
+.img-styled img {
+    max-height: 450px;
+    margin-right: 15px;
+    margin-top: 15px;
+    margin-bottom: -15px;
+    margin-left: -15px;
+}
+
+.img-styled .style {
+    margin-right: 15px;
+    margin-top: 15px;
+    margin-bottom: -15px;
+    margin-left: -15px;
+}
+
+.about .about-text p {
+    line-height: 2;
+}
+
+/* ====================================================
+ 1.4: Resume
+====================================================== */
+
+.resume * {
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+/* .resume .nav-tabs { margin: 0px 0 50px 0; } */
+
+.resume .nav-tabs .nav-link {
+    text-align: center;
+    border-radius: unset;
+    font-weight: 600;
+    border: unset;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding-top: 10px;
+}
+
+.resume .nav-tabs .nav-link:hover {
+    -webkit-transform: scale(.95);
+    transform: scale(.95);
+}
+
+.resume .resume-details {
+    position: relative;
+}
+
+.resume .resume-details .resume-box {
+    padding: 40px;
+    position: relative;
+    margin: 0 0 30px 0;
+}
+
+.resume .resume-details:last-child .resume-box {
+    margin-bottom: 0;
+}
+
+.resume .resume-details .resume-box:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50% 0 0 0;
+}
+
+.resume .resume-details .circle {
+    position: relative;
+}
+
+.resume .resume-details .circle:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 37px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.resume .resume-details .circle:after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 50px;
+    width: 3px;
+    height: 100%;
+}
+
+.resume .resume-details .circle .duration p {
+    padding: 50px 0;
+}
+
+/* ====================================================
+ 1.5: Skills
+====================================================== */
+
+.custom-skills-border {
+    position: relative;
+    height: 2px;
+}
+
+.line-skills-border {
+    position: absolute;
+    top: 0;
+    left: -30%;
+    width: 100%;
+    height: 100%;
+    background-size: 20px 100%;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.line-border1 {
+    left: -28%;
+    -webkit-transform: rotate(-60deg);
+    transform: rotate(-60deg);
+}
+
+.line-border2 {
+    left: unset;
+    right: -30%;
+    -webkit-transform: rotate(40deg);
+    transform: rotate(40deg);
+}
+
+.line-border3 {
+    left: -70%;
+    -webkit-transform: rotate(50deg);
+    transform: rotate(50deg);
+}
+
+.line-border4 {
+    left: unset;
+    right: -50%;
+    -webkit-transform: rotate(-70deg);
+    transform: rotate(-70deg);
+}
+
+.skills .progress {
+    height: 30px;
+    border-radius: unset;
+}
+
+.skills .progress .progress-bar {
+    -ms-flex-pack: start;
+    -webkit-box-pack: start;
+    justify-content: start;
+    -ms-flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 15px;
+    -webkit-transition: none;
+    transition: none;
+}
+
+.skills .pbar-wrapper span {
+    margin-top: -28px;
+    margin-right: -50px;
+    float: right;
+}
+
+/* ====================================================
+ 1.6: Services
+====================================================== */
+
+.services * {
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.services .box {
+    border: 3px dashed;
+    text-align: center;
+    padding: 20px;
+}
+
+.services .box-bg {
+    padding: 20px;
+    overflow: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.services .box:hover {
+    border: 3px dashed;
+    cursor: pointer;
+}
+
+.services .box-bg {
+    min-height: 270px;
+}
+
+.services .box-center {
+    padding: 20px 5px;
+}
+
+.services .inner-box {
+    min-height: 610px;
+    overflow: auto;
+    padding: 20px;
+}
+
+.services .box i {
+    border-bottom: 5px solid;
+}
+
+.services .box p {
+    font-size: 14px;
+}
+
+/* ====================================================
+ 1.7: Portfolio
+====================================================== */
+
+.right-border {
+    position: relative;
+}
+
+.right-border:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -4px;
+    height: 22px;
+    width: 2px;
+}
+
+.border-unset:after {
+    position: relative;
+}
+
+/* .photo-gallery #filter-buttons { margin: 0px 0 50px 0; } */
+
+.filter-button {
+    width: 100px;
+    font-weight: 600;
+    border-radius: unset;
+}
+
+.portfolio .photo-gallery {
+    margin-bottom: -18px;
+}
+
+.portfolio .card-columns .card {
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio .card-columns .card img {
+    min-height: 150px;
+}
+
+.portfolio .card-columns .card .card-meta {
+    position: relative;
+}
+
+.portfolio .card-columns .card .card-meta {
+    position: absolute;
+    top: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+    display: none;
+}
+
+.portfolio .card-columns .card .card-meta:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 90%;
+    height: 90%;
+    background-color: rgba(0, 0, 0, .8);
+    margin: auto;
+    border-radius: 5px;
+    display: none;
+}
+
+.portfolio .card-columns .card .card-meta .meta-texts i {
+    font-size: 30px;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.portfolio .card-columns .card:focus .card-meta, .portfolio .card-columns .card:hover .card-meta, .portfolio .card-columns .card:focus .card-meta:after, .portfolio .card-columns .card:hover .card-meta:after {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+/* ====================================================
+ 1.8: Banner
+====================================================== */
+
+.banner {
+    background-image: url(../images/banner.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* ====================================================
+ 1.9: Blogs
+====================================================== */
+
+.blogs * {
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.blogs .blog-block .blog-text {
+    border: 3px dashed;
+    padding: 20px;
+}
+
+.blogs .blog-block .blog-text p {
+    font-size: 14px;
+}
+
+.blogs .blog-block .blog-text ul.date li {
+    padding: 0 8px;
+    margin: 0;
+}
+
+/* ====================================================
+ 1.10: Testimonials
+====================================================== */
+
+.testimonials {
+    background-image: url(../images/testimonials-bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.testimonials .tst-content img {
+    max-height: 100px;
+    border: 3px solid;
+}
+
+.owl-theme .owl-controls .owl-page span {
+    width: 20px;
+    height: 20px;
+    border-radius: unset;
+    margin-top: 20px;
+}
+
+/* ====================================================
+ 1.11: Contact
+====================================================== */
+
+.contact-info h5 {
+    font-weight: 400;
+}
+
+.contact .icon {
+    height: 70px;
+    width: 70px;
+}
+
+.contact form * {
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.contact form .form-group .form-control {
+    border-radius: unset;
+    letter-spacing: 1px;
+    border: 2px solid;
+}
+
+.contact form .form-group .form-control:hover, .contact form .form-group .form-control:focus {
+    border: 2px solid;
+}
+
+.contact form button.btn {
+    border-radius: unset;
+    letter-spacing: 1px;
+}
+
+/* ====================================================
+ 1.12: Footer
+====================================================== */
+
+footer p {
+    font-size: 14px;
+}
+
+/* ====================================================
+ 1.13: Blog-Posts
+====================================================== */
+
+.blog-content {
+    padding: 60px 0;
+}
+
+.blog-details img {
+    max-height: 400px;
+}
+
+.blog-details i.fa {
+    font-size: 20px;
+}
+
+/* ====================================================
+ 1.14: Blog-Details
+====================================================== */
+
+.blogger * {
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.blogger img {
+    margin: unset;
+}
+
+.blog-details .blog-content .date ul li p i {
+    font-size: 16px;
+}
+
+.blogger-icons li a i {
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+/* ====================================================
+ 1.15: Comment Form
+====================================================== */
+
+.comments img {
+    margin: unset;
+}
+
+.form-control {
+    border: 2px dashed;
+    margin: 10px 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: 45px;
+    font-size: 18px;
+}
+
+.comment-form .btn {
+    margin-top: 20px;
+}
+
+/* ====================================================
+ 1.16: Team
+====================================================== */
+
+.team .team-box {
+    border: 3px dashed;
+    padding: 20px;
+    margin: 0 15px;
+}
+
+.team .team-box .team-text {
+    padding: 20px 0 0 0;
+}
+
+.team .team-box .team-text .team-social {
+    float: right;
+    margin-top: -22px;
+    margin-bottom: 0;
+}
+
+.team .team-box .team-text .team-social li {
+    margin: 0 10px;
+}
+
+.team .team-box .team-text .team-social li a i {
+    font-size: 18px;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ====================================================
+ 1.17: Pricing
+====================================================== */
+
+.pricing * {
+    transition: .3s
+}
+
+.pricing .pricing-box {
+    padding: 0px;
+    border: 3px dashed;
+}
+
+.pricing .pricing-box .price {
+    padding: 20px 0;
+    position: relative;
+}
+
+.pricing .pricing-box .price .best-value {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.pricing .pricing-box .price .best-value h6 {
+    padding: 10px 30px;
+}
+
+.pricing .pricing-box .pricing-list {
+    margin-bottom: 0;
+    margin: 0 0 2px 0;
+}
+
+.pricing .pricing-box .pricing-list li {
+    margin: 1px 0;
+    position: relative;
+}
+
+.pricing .pricing-box .pricing-list li p {
+    line-height: 1;
+    padding: 15px 0;
+}
+
+.pricing .pricing-box .pricing-list li:last-child {
+    border-bottom: unset;
+}
+
+/* ====================================================
+ 1.18: Sidenav
+====================================================== */
+
+.sidenav-open {
+    padding: 10px;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.sidenav-open.fixed-btn {
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    z-index: 10020;
+    transition: .3s;
+}
+
+.bg-overlay-nav {
+    content: "";
+    position: fixed;
+    right: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 990;
+    transform: translateX(100%);
+    transition: .2s
+}
+
+.sidenav {
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 300px;
+    transform: translateX(100%);
+    transition: .3s;
+    z-index: 1000;
+    overflow: auto;
+}
+
+.sidenav .sidenav-title {
+    padding: 70px 0 70px 0px;
+    text-align: center;
+}
+
+.bg-overlay-nav.slide, .sidenav.slide {
+    transform: translateX(0)
+}
+
+.sidenav ul {
+    width: 100%;
+}
+
+.sidenav ul li a {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.sidenav ul li:last-child a {
+    border-bottom: unset;
+}
+
+.sidenav ul li a i {
+    margin-top: 4px;
+    font-size: 18px;
+    float: right;
+}
+
+.bg-active {
+    transition: .3s !important;
+}
+
+
+/* ---- particles.js container ---- */
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* background-color: #b61924; */
+    /* background-image: url(""); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    z-index: 1;
+}

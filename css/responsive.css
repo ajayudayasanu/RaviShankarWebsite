@@ -1,0 +1,821 @@
+/* ----------------------------------------------------
+Theme Name:Cortex - HTML Template
+Version:1.5
+Author:Kiswa Solutions
+------------------------------------------------------- */
+
+/* ======================================================
+ TABLE OF CONTENTS
+====================================================== */
+
+/* 
+
+1.0: Settings 
+1.1: Slider
+1.2: About
+1.3: Resume
+1.4: Skills
+1.5: Services
+1.6: Portfolio
+1.7: Banner
+1.8: Blogs
+1.9: Testimonials
+1.10: Contact
+1.11: Footer
+1.12: Blog-Posts
+1.13: Blog-Details
+1.14: Comment Form
+1.15: Team
+1.16: Color Picker
+
+*/
+
+/* ====================================================
+ 1.0: Settings 
+====================================================== */
+
+/* Heading Style */
+
+@media(max-width:992px) {
+    .heading-border {
+        padding-bottom: 5px;
+    }
+    .heading-absolute {
+        top: -30px;
+        font-size: 60px;
+    }
+    h1.what, .heading h1 {
+        font-size: 32px;
+    }
+}
+
+@media(max-width:576px) {
+    .heading-absolute {
+        top: -20px;
+        font-size: 50px;
+    }
+    h1.what, .heading h1 {
+        font-size: 30px;
+    }
+}
+
+/* Common Margins */
+
+@media(max-width:1200px) {}
+
+@media(max-width:992px) {
+    .about-margin {
+        margin-bottom: 20px;
+    }
+    .heading-margin {
+        margin-bottom: 25px;
+    }
+    .para-margin {
+        margin-bottom: 40px;
+    }
+}
+
+@media(max-width:768px) {
+    .about-margin {
+        margin-bottom: 15px;
+    }
+    .heading-margin {
+        margin-bottom: 20px;
+    }
+    .para-margin {
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width:576px) {
+    /* .about-margin { margin-bottom: 30px; } */
+    /* .para-margin { margin-bottom: 60px; } */
+}
+
+/* Helper Classes */
+
+/* Sections Padding */
+
+@media(max-width:992px) {
+    .section-padding {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+}
+
+@media(max-width:576px) {
+    .section-padding {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+@media(max-width:1200px) {
+    .team .team-box .team-text .team-social li a i, p, a, a.btn, .form-control, .services .box p, .services .box-bg p, .btn {
+        font-size: 16px;
+    }
+}
+
+@media(max-width:992px) {
+    .team .team-box .team-text .team-social li a i, p, a, a.btn, .form-control, .services .box p, .services .box-bg p, .btn {
+        font-size: 15px;
+    }
+}
+
+@media(max-width:768px) {
+    .team .team-box .team-text .team-social li a i, p, a, a.btn, .form-control, .services .box p, .services .box-bg p, .btn {
+        font-size: 14px;
+    }
+}
+
+@media(max-width:576px) {
+    p, a, a.btn, .form-control, .services .box p, .services .box-bg p, .btn {
+        font-size: 13px;
+    }
+}
+
+@media(max-width:992px) {
+    .team .team-box .team-text h4, .services .box-bg h4, .resume .resume-details .resume-box h4 {
+        font-size: 22px;
+    }
+}
+
+@media(max-width:768px) {
+    .team .team-box .team-text h4, .services .box-bg h4, .resume .resume-details .resume-box h4 {
+        font-size: 20px;
+    }
+}
+
+@media(max-width:576px) {
+    .team .team-box .team-text h4, .services .box-bg h4, .resume .resume-details .resume-box h4 {
+        font-size: 18px;
+    }
+}
+
+/* Font Sizes For Nabar*/
+
+@media(max-width:1200px) {
+    .fs-navbar-brand {
+        font-size: 32px;
+    }
+    .fs-nav-link a.nav-link {
+        font-size: 18px;
+    }
+}
+
+@media(max-width:992px) {
+    .fs-navbar-brand {
+        font-size: 30px;
+    }
+    .fs-nav-link a.nav-link {
+        font-size: 16px;
+    }
+}
+
+@media(max-width:768px) {
+    .fs-navbar-brand {
+        font-size: 25px;
+    }
+}
+
+/* ====================================================
+1.1: Slider
+====================================================== */
+
+@media(max-width:1200px) {
+    .meta .first-page-text-headings h1:nth-child(1) {
+        font-size: 30px;
+    }
+    .meta .first-page-text-headings h1:nth-child(2) {
+        font-size: 40px;
+    }
+    .meta .first-page-text-headings .dash {
+        font-size: 19px;
+    }
+    ul.social {
+        margin-top: 0px;
+    }
+    ul.social li {
+        margin: 20px 15px;
+    }
+    ul.social li a {
+        font-size: 25px;
+    }
+}
+
+@media(max-width:768px) {
+    .meta .first-page-text-headings h1:nth-child(1) {
+        font-size: 28px;
+    }
+    .meta .first-page-text-headings h1:nth-child(2) {
+        font-size: 36px;
+    }
+    .meta .first-page-text-headings .dash {
+        font-size: 17px;
+        margin: 15px 0;
+    }
+    ul.social {
+        margin-top: 0px;
+    }
+    ul.social li a {
+        font-size: 22px;
+    }
+}
+
+@media(max-width:576px) {
+    .meta .first-page-text-headings h1:nth-child(1) {
+        letter-spacing: 10px;
+        font-size: 24px;
+    }
+    .meta .first-page-text-headings h1:nth-child(2) {
+        font-size: 32px;
+    }
+    .meta .first-page-text-headings .dash {
+        line-height: 1.2;
+        letter-spacing: 1px;
+        font-size: 15px;
+        margin: 15px 0;
+    }
+    ul.social li {
+        margin: 15px 15px;
+    }
+    ul.social li a {
+        font-size: 20px;
+    }
+}
+
+@media(max-height:400px) {
+    .slider1.swiper-container {
+        width: 100%;
+        height: unset;
+    }
+    .meta {
+        padding: 0px 0 40px 0;
+    }
+    .colorRang {
+        top: 90px;
+    }
+}
+
+/* ====================================================
+1.3: About
+====================================================== */
+
+@media(max-width:1200px) {
+    .img-styled img {
+        max-height: 350px;
+    }
+    .about .about-text p {
+        line-height: 1.7;
+    }
+    h4.freelance, .about .about-text h4 {
+        font-size: 20px;
+    }
+}
+
+@media(max-width:768px) {
+    .about .about-text p {
+        line-height: 1.5;
+    }
+}
+
+@media(max-width:576px) {
+    .about .about-text p {
+        line-height: 1.4;
+    }
+    h4.freelance, .about .about-text h4 {
+        font-size: 18px;
+    }
+}
+
+/* ====================================================
+1.4: Resume
+====================================================== */
+
+@media(max-width:992px) {
+    .resume .nav-tabs .nav-link {
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+    .resume .resume-details .resume-box {
+        padding: 20px;
+    }
+    .resume .resume-details .resume-box h6 {
+        font-size: 16px;
+    }
+    .resume .resume-details .resume-box:before {
+        width: 20px;
+        height: 20px;
+    }
+    .resume .resume-details .circle:before {
+        right: 31px;
+        width: 20px;
+        height: 20px;
+    }
+    .resume .resume-details .circle:after {
+        right: 40px;
+    }
+}
+
+@media(max-width:768px) {
+    .resume .nav-tabs .nav-link {
+        padding-top: 6px;
+        padding-bottom: 6px;
+    }
+    .resume .resume-details .resume-box h6 {
+        font-size: 15px;
+    }
+    .resume .resume-details .circle:before {
+        display: none;
+    }
+    .resume .resume-details .circle:after {
+        display: none;
+    }
+    .resume .resume-details .circle .duration p {
+        padding: 20px 0 20px 0;
+    }
+    .resume .resume-details .resume-box {
+        margin: 0 0 25px 0;
+    }
+}
+
+@media(max-width:576px) {
+    .resume .resume-details .resume-box h6 {
+        font-size: 14px;
+    }
+    .resume .resume-details .circle:before {
+        display: none;
+    }
+    .resume .resume-details .circle:after {
+        display: none;
+    }
+    .resume .resume-details .circle .duration p {
+        padding: 0px 0 20px 0;
+    }
+    .resume .resume-details .resume-box {
+        margin: 0 0 20px 0;
+    }
+}
+
+/* ====================================================
+1.5: Skills
+====================================================== */
+
+@media(max-width:1200px) {
+    .line-skills-border {
+        display: none;
+    }
+    .skills .progress {
+        height: 30px;
+    }
+    .skills .progress .progress-bar {
+        font-size: 15px;
+    }
+}
+
+@media(max-width:992px) {
+    .skills .progress {
+        height: 25px;
+    }
+    .skills .progress .progress-bar {
+        font-size: 13px;
+    }
+}
+
+@media(max-width:768px) {
+    .skills .pbar-wrapper span {
+        margin-top: -24px;
+        font-size: 14px
+    }
+}
+
+@media(max-width:576px) {
+    .skills .pbar-wrapper span {
+        margin-top: -20px;
+        font-size: 13px
+    }
+    .skills .progress {
+        height: 22px;
+    }
+}
+
+/* ====================================================
+1.6: Services
+====================================================== */
+
+@media(max-width:1200px) {
+    .services .box-bg {
+        min-height: 200px;
+    }
+    .services .inner-box {
+        min-height: 200px;
+    }
+    h1.what {
+        text-align: center;
+    }
+}
+
+@media(max-width:576px) {
+    .services .box-bg {
+        min-height: 200px;
+    }
+    .services .inner-box {
+        min-height: 200px;
+    }
+    h1.what {
+        text-align: center;
+    }
+}
+
+/* ====================================================
+1.7: Portfolio
+====================================================== */
+
+@media(max-width:1200px) {
+    /* .photo-gallery #filter-buttons { margin: 40px 0 30px 0; } */
+    .filter-button {
+        width: 80px;
+    }
+    .portfolio .card-columns .card .card-meta .meta-texts i {
+        font-size: 25px;
+        -webkit-transition: .3s;
+        transition: .3s;
+    }
+}
+
+@media(max-width:992px) {
+    .right-border:after {
+        height: 20px;
+    }
+    /* .photo-gallery #filter-buttons { margin: 35px 0 35px 0; } */
+}
+
+@media(max-width:576px) {
+    .right-border:after {
+        height: 16px;
+    }
+    .filter-button {
+        width: 65px;
+        margin: 5px 0;
+    }
+    .portfolio .card-columns .card .card-meta .meta-texts h3 {
+        font-size: 20px;
+    }
+    .portfolio .card-columns .card .card-meta .meta-texts h6 {
+        font-size: 16px;
+    }
+    .portfolio .card-columns .card .card-meta .meta-texts i {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    .card-columns {
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
+}
+
+@media (max-width: 768px) {
+    .card-columns {
+        -webkit-column-count: 1;
+        column-count: 1;
+    }
+}
+
+/* ====================================================
+1.8: Banner
+====================================================== */
+
+@media(max-width:1200px) and (min-width:576px) {
+    .banner .icon i {
+        font-size: 40px;
+    }
+    .banner .icon h1 {
+        font-size: 32px;
+    }
+    .banner .icon h4 {
+        font-size: 20px;
+    }
+}
+
+@media(max-width:576px) {
+    .banner .icon i {
+        font-size: 36px;
+    }
+    .banner .icon h1 {
+        font-size: 30px;
+    }
+    .banner .icon h4 {
+        font-size: 18px;
+    }
+}
+
+/* ====================================================
+1.9: Blogs
+====================================================== */
+
+@media(max-width:400px) {
+    .blogs .blog-block .blog-text {
+        padding: 20px 15px;
+    }
+    .blogs .blog-block .blog-text p {
+        font-size: 13px;
+    }
+    .blogs .blog-block .blog-text ul.date li {
+        padding: 0 5px;
+    }
+}
+
+/* ====================================================
+1.10: Testimonials
+====================================================== */
+
+@media(max-width:992px) {
+    .testimonials .tst-content i {
+        font-size: 50px
+    }
+    .testimonials .tst-content h2 {
+        font-size: 26px
+    }
+    .owl-theme .owl-controls .owl-page span {
+        width: 15px;
+        height: 15px;
+    }
+}
+
+/* ====================================================
+1.11: Contact
+====================================================== */
+
+@media(max-width:1200px) {
+    .contact .icon {
+        height: 70px;
+        width: 70px;
+    }
+    .contact .icon i {
+        font-size: 35px
+    }
+    .contact-info h5 {
+        font-size: 18px;
+    }
+}
+
+@media(max-width:992px) {
+    /* .contact-info h3 { font-size: 26px; } */
+}
+
+@media(max-width:576px) {
+    .center-responsive {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        padding: 0;
+        text-align: center;
+    }
+    .contact .icon {
+        height: 60px;
+        width: 60px;
+    }
+    .contact .icon i {
+        font-size: 30px
+    }
+    .contact-info h5 {
+        font-size: 16px;
+    }
+    h3.freelance, .contact-info h3 {
+        font-size: 24px;
+    }
+    .contact .form-control {
+        text-align: center;
+    }
+    .form-control {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        height: 35px;
+    }
+}
+
+/* ====================================================
+1.12: Footer
+====================================================== */
+
+@media(max-width:576px) {
+    footer p {
+        font-size: 12px;
+    }
+}
+
+/* ====================================================
+1.13: Blog-Posts
+====================================================== */
+
+@media(max-width:1200px) {
+    .blog-details .blog-content h3 {
+        font-size: 25px;
+    }
+}
+
+@media(max-width:992px) {
+    .blog-details .blog-content h3 {
+        font-size: 20px;
+    }
+}
+
+@media(max-width:576px) {
+    .blog-content {
+        padding: 30px 0;
+    }
+    .blog-details .blog-content h3 {
+        font-size: 16px;
+    }
+    .blog-details .blog-content .date ul li p i {
+        font-size: 14px;
+    }
+}
+
+/* ====================================================
+1.14: Blog-Details
+====================================================== */
+
+@media(max-width:992px) {
+    .blogger-text h5 {
+        font-size: 18px
+    }
+    .blogger-icons li a i {
+        width: 35px;
+        height: 35px;
+        font-size: 18px;
+    }
+    .comments h1 {
+        font-size: 35px
+    }
+    .comment-text h2 {
+        font-size: 30px
+    }
+    .comment-text h6 {
+        font-size: 15px
+    }
+}
+
+@media(max-width:768px) {
+    .comments h1 {
+        font-size: 30px
+    }
+    .comment-text h2 {
+        font-size: 28px
+    }
+}
+
+@media(max-width:576px) {
+    .blogger-text h1 {
+        font-size: 25px
+    }
+    .blogger-text h5 {
+        font-size: 16px
+    }
+    .comment-text h2 {
+        font-size: 25px
+    }
+    .comment-text h6 {
+        font-size: 15px
+    }
+    .blogger-icons li a i {
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+    }
+}
+
+/* ====================================================
+1.15: Comment Form
+====================================================== */
+
+@media(max-width:992px) {
+    .comment-form h1 {
+        font-size: 30px
+    }
+}
+
+@media(max-width:576px) {
+    .comments img {
+        margin: unset;
+    }
+    .comment-form h1 {
+        font-size: 25px
+    }
+}
+
+/* ====================================================
+1.16: Team
+====================================================== */
+
+@media(max-width:992px) {
+    .team .team-box .team-text .team-social li a i {
+        width: 12px;
+    }
+}
+
+@media(max-width:400px) {
+    .team .team-box {
+        padding: 15px;
+    }
+    .team .team-box .team-text .team-social {
+        float: unset;
+        margin-top: 15px;
+        text-align: right;
+    }
+}
+
+/* ====================================================
+ 1.17: Pricing
+====================================================== */
+
+@media(max-width:1200px) {
+    .pricing .pricing-box .price {
+        padding: 50px 0;
+        position: relative;
+    }
+    .pricing .pricing-box .price .best-value h6 {
+        padding: 8px 30px;
+    }
+    .pricing .pricing-box h3 {
+        font-size: 24px
+    }
+    .pricing .pricing-box h1 {
+        font-size: 60px;
+    }
+    .pricing .pricing-box .pricing-list {
+        margin-bottom: 0;
+        margin: 0 0 2px 0;
+    }
+    .pricing .pricing-box .pricing-list li p {
+        line-height: 1;
+        padding: 10px 0;
+    }
+}
+
+@media(max-width:992px) {
+    .pricing .pricing-box .price .best-value h6 {
+        padding: 6px 25px;
+    }
+    .pricing .pricing-box h3 {
+        font-size: 22px
+    }
+    .pricing .pricing-box h1 {
+        font-size: 50px;
+    }
+    .pricing .pricing-box .pricing-list {
+        margin-bottom: 0;
+        margin: 0 0 2px 0;
+    }
+    .pricing .pricing-box .pricing-list li p {
+        line-height: 1;
+        padding: 12px 0;
+    }
+}
+
+@media(max-width:768px) {
+    .pricing .pricing-box:hover {
+        transform: unset;
+    }
+    .pricing .pricing-box .price {
+        padding: 40px 0;
+    }
+    .pricing .pricing-box h3 {
+        font-size: 22px
+    }
+}
+
+/* ====================================================
+ 1.17: Sidenav
+====================================================== */
+
+@media(max-width:768px) {
+    .sidenav {
+        width: 260px;
+    }
+    .sidenav .sidenav-title {
+        padding: 50px 0 50px 0px;
+    }
+    .sidenav .sidenav-title h1 {
+        font-size: 30px
+    }
+}
+
+/* ====================================================
+ 1.18: Color Picker
+====================================================== */
+
+@media(max-width:992px) {
+    .colorPicker {
+        width: 40px;
+        height: 40px;
+    }
+    .colorPicker i {
+        font-size: 25px;
+    }
+}

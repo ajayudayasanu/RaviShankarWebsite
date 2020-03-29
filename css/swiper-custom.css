@@ -1,0 +1,18 @@
+
+
+.slider1.swiper-container { width: 100%; height: 100vh; } 
+
+
+/*=========================slider1 Starts=========================*/
+
+/*=========================slider1 Customized Code starts=========================*/
+
+.slider1.swiper-container .swiper-button-next,
+.slider1.swiper-container .swiper-container-rtl .swiper-button-prev,
+.slider1.swiper-container .swiper-button-prev,
+.slider1.swiper-container .swiper-container-rtl .swiper-button-next { background-image: none; font-size: 50px; color: #898989FF; } 
+
+
+/*=========================slider1 Customized Code Ends=========================*/
+
+/*=========================slider1 Ends=========================*/

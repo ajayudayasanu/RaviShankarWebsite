@@ -1,0 +1,322 @@
+/* ----------------------------------------------------
+Theme Name:Cortex - HTML Template
+Version:1.5
+Author:Kiswa Solutions
+------------------------------------------------------- */
+
+/* ======================================================
+TABLE OF CONTENTS
+====================================================== */
+
+/* 
+
+1.0: Settings 
+1.1: Navbar
+1.2: Resume
+1.3: Skills
+1.4: Services
+1.5: Portfolio
+1.6: Testimonials
+1.7: Contact
+1.8: Pricing
+1.9: Sidenav
+
+*/
+
+/* ====================================================
+ 1.0: Settings 
+====================================================== */
+
+body {
+    color: #212529;
+}
+
+.form-control:focus {
+    color: #212529;
+    background-color: #ffffff;
+}
+
+.line-border {
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(30%, transparent), color-stop(30%, #999999));
+    background-image: linear-gradient(to right, transparent 30%, #999999 30%);
+}
+
+/* Accent Colors or Primary Colors For WebPage */
+
+.primary-color {
+    color: #fab700;
+}
+
+.primary-color a {
+    color: #fab700;
+}
+
+.primary-color .hover {
+    color: #e4c200;
+}
+
+.primary-colorh:hover {
+    color: #e4c200;
+}
+
+.primary-colorh .hover:hover {
+    color: #e4c200 !important;
+}
+
+/* Background Colors */
+
+.bg-primary-color {
+    background-color: #fab700;
+}
+
+.bg-primary-colorh:hover {
+    background-color: #e4c200;
+}
+
+.bg-primary-colorhb:hover {
+    background: #e4c200;
+    color: #000000;
+}
+
+.bg-primary-colorh:hover a {
+    background-color: #e4c200;
+}
+
+/* Border On Hover */
+
+.bg-primary-borderh:hover {
+    background-color: unset;
+    border: 1px solid #e4c200;
+}
+
+/* Active Color for Whole Page */
+
+.active {
+    color: #fab700 !important;
+}
+
+.bg-active {
+    background-color: #fab700 !important;
+}
+
+/* Border Colors */
+
+.primary-border {
+    border-color: #fab700 !important;
+}
+
+.primary-border-e {
+    border-color: #cccccc !important;
+}
+
+.primary-border-eh:hover {
+    border-color: #e4c200 !important;
+}
+
+.primary-border-eh:focus.form-control {
+    border-color: #e4c200 !important;
+}
+
+/* Colors On Accent Background */
+
+.on-bg-color {
+    color: #000000 !important;
+}
+
+.on-bg-colorh:hover {
+    color: #000000 !important;
+}
+
+/* Colors For WebPage */
+.text-white-persist a,
+.text-white-persist{color: #ffffff;}
+
+.text-white-persist-e{color: #e6e6e6;}
+
+
+.text-white {
+    color: #ffffff !important;
+}
+
+.text-white a {
+    color: #ffffff;
+}
+
+.text-white-e {
+    color: #dbdbdb;
+}
+
+.text-white-e a {
+    color: #e6e6e6;
+}
+
+.text-white-c {
+    color: rgba(204, 204, 204, 0.7);
+}
+
+.bg-white {
+    background-color: #ffffff !important;
+}
+
+.bg-white-e {
+    background-color: #e6e6e6;
+}
+
+.bg-white-c li.bg-c, .bg-white-c {
+    background-color: #cccccc;
+}
+
+.bg-white-cl li.bg-c {
+    background-color: #cccccc;
+}
+
+.bg-gray {
+    background-color: #757575;
+    color: #ffffff;
+}
+
+.bg-dark {
+    background-color: #343a40 !important;
+}
+
+.text-black a, .text-black {
+    color: #000000;
+}
+
+.text-black-3 {
+    color: #333333;
+}
+
+.text-black-5 {
+    color: #555555;
+}
+
+.text-black-7 {
+    color: #777777;
+}
+
+.bg-black {
+    background-color: #000000 !important;
+}
+
+.bg-black-9 {
+    background-color: #555555;
+}
+
+.bg-overlay:after {
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.bg-overlay-dark:after {
+    background-color: rgba(0, 0, 0, .7);
+}
+
+/* ====================================================
+1.1: Navbar
+====================================================== */
+
+/* scroll animation */
+
+nav.navbar.padding {
+    background-color: #000000;
+}
+
+/* ====================================================
+1.2: Resume
+====================================================== */
+
+.resume .resume-details .resume-box {
+    border-right: 3px solid #fab700;
+}
+
+.resume .nav-tabs .nav-link.active:hover {
+    color: #000;
+}
+
+.resume .resume-details .resume-box:before {
+    background-color: #fab700;
+}
+
+.resume .resume-details .circle:before {
+    background-color: #fab700;
+}
+
+.resume .resume-details .circle:after {
+    background-color: #fab700;
+}
+
+/* ====================================================
+1.3: Skills
+====================================================== */
+
+.line-skills-border {
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(30%, transparent), color-stop(30%, #fab700));
+    background-image: linear-gradient(to right, transparent 30%, #fab700 30%);
+}
+
+/* ====================================================
+1.4: Services
+====================================================== */
+
+/* width */
+
+inner-box::-webkit-scrollbar, .box-bg::-webkit-scrollbar {
+    width: 2px;
+}
+
+/* Track */
+
+inner-box::-webkit-scrollbar-track, .box-bg::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 5px grey;
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+
+inner-box::-webkit-scrollbar-thumb, .box-bg::-webkit-scrollbar-thumb {
+    background: #000000;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+
+inner-box::-webkit-scrollbar-thumb:hover, .box-bg::-webkit-scrollbar-thumb:hover {
+    background: #333333;
+}
+
+/* ====================================================
+1.5: Portfolio
+====================================================== */
+
+.right-border:after {
+    background-color: #999999;
+}
+
+.portfolio .card-columns .card .card-meta:after {
+    background-color: rgba(0, 0, 0, .8);
+}
+
+/* ====================================================
+1.6: Testimonials
+====================================================== */
+
+.owl-theme .owl-controls .owl-page span {
+    background-color: #cccccc;
+}
+
+.owl-theme .owl-controls .owl-page.active span {
+    background-color: #fab700;
+}
+
+/* ====================================================
+1.7: Contact
+====================================================== */
+
+.contact form .form-control {
+    border: 1px solid #e6e6e6 !important;
+}
+
+.contact form .form-control:focus {
+    border: 1px solid #e6e6e6 !important;
+}

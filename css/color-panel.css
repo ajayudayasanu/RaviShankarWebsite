@@ -1,0 +1,131 @@
+/* ----------------------------------------------------
+Theme Name:Cortex - HTML Template
+Version:1.5
+Author:Kiswa Solutions
+------------------------------------------------------- */
+
+.fa-palette {
+    padding: 10px 20px;
+}
+
+.colors h6 {
+    font-weight: 600;
+}
+
+.colorRang {
+    width: auto;
+    height: auto;
+    position: fixed;
+    top: 150px;
+    left: 0;
+    z-index: 9999;
+}
+
+.colorPicker {
+    width: 50px;
+    height: 50px;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 3px 1px 5px 0 rgba(0, 0, 0, .6);
+}
+
+.colorPicker i {
+    font-size: 35px;
+    border-radius: 50%;
+    align-items: center;
+    display: flex;
+}
+
+.colors {
+    padding: 15px 20px;
+    margin-top: 10px;
+    margin-left: 1px;
+    display: none;
+    box-shadow: 2px 1px 5px 1px rgba(0, 0, 0, .4);
+    border-radius: 0 20px;
+}
+
+.colors span {
+    display: block;
+    width: 35px;
+    height: 35px;
+    margin: 5px;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 5px 0 5px 0;
+    margin-bottom: -2px;
+    box-shadow: 1px 5px 5px 0 rgba(0, 0, 0, .4);
+    transform: skew(-5deg) rotate(5deg);
+    transition: .3s all;
+}
+
+.colors span:hover {
+    transform: skew(-5deg) rotate(5deg) scale(1.05) translateY(5px);
+}
+
+.blue {
+    background: #5d83ff
+}
+
+.green {
+    background: #5de60e
+}
+
+.mayablue {
+    background: #52A3CC
+}
+
+.red {
+    background: #fa5151
+}
+
+.roman {
+    background: #E68585
+}
+
+.springgreen {
+    background: #0ad670
+}
+
+.violet {
+    background: #f134e8
+}
+
+.yellow {
+    background: #fab700
+}
+
+.dark-blue {
+    background: #1414b3
+}
+
+.dark-cyan {
+    background: #087a7a
+}
+
+.dark-green {
+    background: #015c3b
+}
+
+.dark-indigo {
+    background: #5c456b
+}
+
+.dark-orange {
+    background: #c06a01
+}
+
+.dark-pink {
+    background: #db376e
+}
+
+.dark-purple {
+    background: #8A2BE2
+}
+
+.dark-red {
+    background: #d30000
+}
